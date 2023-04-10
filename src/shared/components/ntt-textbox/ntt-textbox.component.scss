@@ -1,0 +1,15 @@
+.form-column{
+    display: flex; 
+    flex-flow: column nowrap;
+}
+.form-column > .dx-field-label{
+    align-self: auto;
+}
+.dx-field-value {
+    width: 100% !important;
+}
+
+.dx-field-disabled {
+    @apply bg-neutral-50;
+}
+.required{color: red;}

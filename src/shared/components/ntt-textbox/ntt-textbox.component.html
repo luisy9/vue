@@ -1,0 +1,13 @@
+<div class="dx-field form-column"  v-bind:class="{ 'dx-field-disabled': isDisabledProp }" >
+    <div v-if="label !== undefined && !isLoading" class="dx-field-label">{{label}} <span v-if="required" class="required">*</span></div>
+    <div class="dx-field-value">
+        <dx-text-box v-model="model" :valueChangeEvent="'keyup'" :mode="mode" :readOnly="isDisabledProp" 
+        :placeholder="placeholder" @value-changed="valueChanged($event)"
+        :show-clear-button="showClearButton">
+            <dx-validator>
+                <dx-required-rule v-if="required" :message="requiredMessage" />
+            </dx-validator>
+        </dx-text-box>
+     </div>
+</div>
+

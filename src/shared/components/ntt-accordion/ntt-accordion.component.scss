@@ -1,0 +1,18 @@
+.accordion{
+    .dx-texteditor.dx-editor-outlined{ border: none; background: none; }
+    .template-content{ border-top: #e9e9e9 solid 1px;}
+    .pill{ @apply cursor-pointer px-4 py-1 rounded-full bg-inform-50;}
+    .dx-tag { 
+        max-width: none;
+        .dx-tag-content{ background-color: #f2f3f8;}
+    }
+    .option-icon {margin-left: -3px !important;}   
+
+    .dx-texteditor-input{border: 1px solid #ddd;}
+
+    .dx-button-content{color: #183d54;}
+
+    .dx-fileuploader-input-wrapper::before {padding-top: 0 !important;}
+
+    .dx-accordion-item-body{padding: 0px 12px 0px;}
+}
